@@ -1,36 +1,59 @@
 # Server Configuration
-server.port= 9901
-server.servlet.context-path=/
+server:
+  port: 9901
+  servlet:
+    context-path: "/"
 
 # Spring Application
-spring.application.name=orders
-spring.main.allow-bean-definition-overriding=true
-spring.main.web-application-type=REACTIVE
-
-# Spring Security
-spring.security.oauth2.resourceserver.jwt.issuer-uri=https://auth.chevere.ddns.net/realms/kysoft-realm
-spring.security.oauth2.resourceserver.jwt.jwk-set-uri=https://auth.chevere.ddns.net/realms/kysoft-realm/protocol/openid-connect/certs
-spring.security.oauth2.client.provider.keycloak.token-uri=https://auth.chevere.ddns.net/realms/kysoft-realm/protocol/openid-connect/token
+spring:
+  main:
+    allow-bean-definition-overriding: true
+    web-application-type: REACTIVE
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri: "https://auth.chevere.ddns.net/realms/kysoft-realm"
+          jwk-set-uri: "https://auth.chevere.ddns.net/realms/kysoft-realm/protocol/openid-connect/certs"
+      client:
+        provider:
+          keycloak:
+            token-uri: "https://auth.chevere.ddns.net/realms/kysoft-realm/protocol/openid-connect/token"
 
 # JWT Configuration
-jwt.auth.converter.resource-id=registro-civil
-jwt.auth.converter.principle-attribute=preferred_username
+jwt:
+  auth:
+    converter:
+      resource-id: "registro-civil"
+      principle-attribute: "preferred_username"
 
 # HTTP and CORS Configuration
-http.cors-enabled=true
-http.cors.allowed-origins=http://localhost:8080
-http.cors.allowed-methods=*
-http.cors.allowed-headers=*
-http.cors.exposed-headers=*
-http.cors.allow-credentials=true
-http.cors.max-age=3600
+http:
+  cors-enabled: true
+  cors:
+    allowed-origins: "http://localhost:8080"
+    allowed-methods: "*"
+    allowed-headers: "*"
+    exposed-headers: "*"
+    allow-credentials: true
+    max-age: 3600
 
 # Eureka Client Configuration
-eureka.instance.hostname=localhost
-eureka.client.service-url.defaultZone=http://localhost:8761/eureka
+eureka:
+  instance:
+    hostname: "localhost"
+  client:
+    service-url:
+      defaultZone: "http://localhost:8761/eureka"
 
 # SpringDoc Configuration
-springdoc.swagger-ui.path=/swagger-ui.html
+springdoc:
+  swagger-ui:
+    path: "/swagger-ui.html"
 
 # Management Endpoints
-management.endpoints.web.exposure.include=openapi,swagger-ui
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "openapi,swagger-ui"
