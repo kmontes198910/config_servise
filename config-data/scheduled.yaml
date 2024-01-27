@@ -6,8 +6,6 @@ server:
 
 # Spring Application
 spring:
-  application:
-    name: scheduled
   main:
     allow-bean-definition-overriding: true
     web-application-type: reactive
