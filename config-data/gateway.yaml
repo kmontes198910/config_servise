@@ -26,6 +26,16 @@ spring:
       discovery:
         locator:
           enabled: true
+  kafka:
+      bootstrap-servers: localhost:29092  # Cambia esto según tu configuración de Kafka
+      producer:
+        key-serializer: org.apache.kafka.common.serialization.StringSerializer
+        value-serializer: org.apache.kafka.common.serialization.StringSerializer
+      consumer:
+        group-id: group_id
+        auto-offset-reset: earliest
+        key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+        value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
 
 # Scheduler Configuration
 scheduler:
