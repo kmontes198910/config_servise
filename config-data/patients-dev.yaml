@@ -24,7 +24,8 @@ spring:
     driverClassName: org.postgresql.Driver
     url: jdbc:postgresql://localhost:5432/patients
     username: postgres
-    password: toor# JWT Configuration
+    password: toor
+    # JWT Configuration
 jwt:
   auth:
     converter:
