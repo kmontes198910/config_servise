@@ -20,7 +20,11 @@ spring:
           keycloak:
             token-uri: "https://auth.chevere.ddns.net/realms/kysoft-realm/protocol/openid-connect/token"
 
-# JWT Configuration
+  datasource:
+    driverClassName: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/patients
+    username: postgres
+    password: toor# JWT Configuration
 jwt:
   auth:
     converter:
@@ -58,8 +62,4 @@ management:
       exposure:
         include: "openapi,swagger-ui"
 
-datasource:
-  driverClassName: org.postgresql.Driver
-  url: jdbc:postgresql://localhost:5432/patients
-  username: postgres
-  password: toor
+
