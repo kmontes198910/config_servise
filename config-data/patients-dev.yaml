@@ -58,8 +58,8 @@ management:
       exposure:
         include: "openapi,swagger-ui"
 
-  datasource:
-    driverClassName: org.postgresql.Driver
-    url: jdbc:postgresql://localhost:5432/patients
-    username: postgres
-    password: toor
+datasource:
+  driverClassName: org.postgresql.Driver
+  url: jdbc:postgresql://localhost:5432/patients
+  username: postgres
+  password: toor
