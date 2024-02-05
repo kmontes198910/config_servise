@@ -21,7 +21,7 @@ spring:
             token-uri: "https://auth.chevere.ddns.net/realms/kysoft-realm/protocol/openid-connect/token"
   datasource:
     driverClassName: org.postgresql.Driver
-    url: jdbc:postgresql://localhost:5432/patients
+    url: jdbc:postgresql://localhost:5432/treatments
     username: postgres
     password: toor
 
@@ -35,7 +35,6 @@ spring:
     hibernate:
       ddl-auto: update
     show-sql: true
-    # JWT Configuration
 # JWT Configuration
 jwt:
   auth:
