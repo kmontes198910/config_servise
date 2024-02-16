@@ -21,7 +21,7 @@ spring:
             token-uri: https://auth.chevere.ddns.net/realms/kysoft-realm/protocol/openid-connect/token
   datasource:
     driverClassName: org.postgresql.Driver
-    url: jdbc:postgresql://db-calendar:5431/calendar
+    url: jdbc:postgresql://db-calendar:5431/ms_calendar
     username: postgres
     password: toor
 
