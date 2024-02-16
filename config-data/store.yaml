@@ -1,6 +1,6 @@
 # Server Configuration
 server:
-  port: 9909
+  port: 9907
   servlet:
     context-path: "/"
 
