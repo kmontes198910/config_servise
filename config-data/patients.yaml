@@ -1,6 +1,6 @@
 # Server Configuration
 server:
-  port: 9905
+  port: 9909
   servlet:
     context-path: "/"
 
@@ -20,7 +20,23 @@ spring:
           keycloak:
             token-uri: "https://auth.chevere.ddns.net/realms/kysoft-realm/protocol/openid-connect/token"
 
-# JWT Configuration
+  datasource:
+    driverClassName: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/patients
+    username: postgres
+    password: toor
+
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        jdbc:
+          lob:
+            non_contextual_creation: true
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    # JWT Configuration
 jwt:
   auth:
     converter:
@@ -57,3 +73,5 @@ management:
     web:
       exposure:
         include: "openapi,swagger-ui"
+
+
