@@ -21,7 +21,7 @@ spring:
             token-uri: "https://auth.chevere.ddns.net/realms/kysoft-realm/protocol/openid-connect/token"
   datasource:
     driverClassName: org.postgresql.Driver
-    url: jdbc:postgresql://localhost:5431/treatments
+    url: jdbc:postgresql://db:5431/treatments
     username: postgres
     password: toor
 
