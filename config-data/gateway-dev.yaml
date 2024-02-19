@@ -70,7 +70,7 @@ eureka:
   client:
     register-with-eureka: false
     service-url:
-      defaultZone: http://${RC_SERVER_CONFIG}/eureka/
+      defaultZone: http://registry-service:8761/eureka/
   instance:
     prefer-ip-address: true
 
