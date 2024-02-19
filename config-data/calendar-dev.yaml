@@ -46,7 +46,7 @@ jwt:
 http:
   cors-enabled: true
   cors:
-    allowed-origins: http://host.docker.internal:8080
+    allowed-origins: http://localhost:8080
     allowed-methods: '*'
     allowed-headers: '*'
     exposed-headers: '*'
