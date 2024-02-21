@@ -22,7 +22,7 @@ spring:
 
   datasource:
     driverClassName: org.postgresql.Driver
-    url: jdbc:postgresql://db:5432/patients
+    url: jdbc:postgresql://localhost:5432/patients
     username: postgres
     password: toor
 
