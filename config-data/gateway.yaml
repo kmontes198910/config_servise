@@ -52,7 +52,7 @@ jwt:
       principle-attribute: preferred_username
 
 # Keycloak Configuration
-keycloack:
+keycloak:
   provider:
     server-url: https://auth.chevere.ddns.net
     realm-name: kysoft-realm
