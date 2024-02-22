@@ -1,6 +1,5 @@
-# Server Configuration
 server:
-  port: 0
+  port: ${SERVER_PORT:0}
   servlet:
     context-path: "/"
 
