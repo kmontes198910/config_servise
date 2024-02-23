@@ -64,7 +64,8 @@ keycloak:
     client-secret: 7iVyW9QCuWoLhK4XOkcza3M72eRaGQLp
     grant_type: password
     default-role: ADMIN
-
+google:
+  client-id: 945296493767-ic6omj9ke4o76n11k71eq0trap4lu6r0.apps.googleusercontent.com
 # Eureka Client Configuration
 eureka:
   client:
