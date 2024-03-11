@@ -61,7 +61,7 @@ keycloak:
     user-console: admin
     password-console: ZWJjMTViM2U4YjQ0MTQwZTI5ZjI1YWFk
     client-id: registro-civil
-    client-secret: 1H9aICIPNYxYplgkbfR7VWdCuuuhPMeb
+    client-secret: 3SH8250q61Q3U6gZKAhOnETBKaz1BsdY
     grant_type: password
     default-role: ADMIN
 
