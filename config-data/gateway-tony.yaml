@@ -26,6 +26,8 @@ spring:
       discovery:
         locator:
           enabled: true
+      default-filters:
+        - DedupeResponseHeader=Access-Control-Request-Method Access-Control-Allow-Origin Access-Control-Request-Headers
   kafka:
       bootstrap-servers: ${KAFKA_BOOTSTRAP_SERVERS:localhost:29092}
       producer:
@@ -104,3 +106,4 @@ logging:
       springframework:
         cloud: DEBUG
     keycloak: DEBUG
+
